@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218080510) do
+ActiveRecord::Schema.define(version: 20150220074526) do
 
   create_table "books", force: :cascade do |t|
     t.string   "title",       limit: 255
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150218080510) do
     t.datetime "updated_at",                null: false
     t.integer  "rating",      limit: 4
     t.date     "finished_on"
+    t.text     "keywords",    limit: 65535
   end
 
 end
