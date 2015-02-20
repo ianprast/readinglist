@@ -18,6 +18,7 @@
 <p>
   <strong>Amazon:</strong>
   <%= @book.amazon_id %>
+  <%=  image_from_amazon(@book.amazon_id) %> 
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
